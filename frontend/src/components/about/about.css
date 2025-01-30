@@ -1,0 +1,141 @@
+.ezy__about17 {
+	/* Bootstrap variables */
+	--bs-body-color: #28303b;
+	--bs-body-bg: rgb(255, 255, 255);
+
+	/* Easy Frontend variables */
+	--ezy-theme-color: rgb(13, 110, 253);
+	--ezy-theme-color-rgb: 13, 110, 253;
+	--ezy-body-color-invert: rgb(246, 246, 246);
+	--ezy-border-color: rgba(171, 171, 171, 0.6);
+
+	background-color: var(--bs-body-bg);
+	color: var(--bs-body-color);
+	position: relative;
+	padding: 60px 0 0;
+	z-index: 1;
+}
+
+@media (min-width: 768px) {
+	.ezy__about17 {
+		padding: 100px 0 0;
+	}
+}
+
+/* Gray Block Style */
+.gray .ezy__about17,
+.ezy__about17.gray {
+	/* Bootstrap variables */
+	--bs-body-bg: rgb(246, 246, 246);
+
+	/* Easy Frontend variables */
+	--ezy-body-color-invert: rgb(255, 255, 255);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__about17,
+.ezy__about17.dark-gray {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(30, 39, 53);
+
+	/* Easy Frontend variables */
+	--ezy-body-color-invert: rgb(11, 23, 39);
+}
+
+.dark .ezy__about17,
+.ezy__about17.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
+
+	/* Easy Frontend variables */
+	--ezy-body-color-invert: rgb(30, 39, 53);
+}
+
+.ezy__about17-heading {
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+	.ezy__about17-heading {
+		font-size: 55px;
+	}
+}
+
+.ezy__about17-sub-heading {
+	font-size: 17px;
+	line-height: 1.7;
+	opacity: 0.8;
+}
+
+/* shapes */
+.ezy__about17-shape-one {
+	z-index: -1;
+	top: -10%;
+	left: -10%;
+}
+.ezy__about17-shape-two {
+	z-index: -1;
+	top: 75%;
+	right: 0%;
+}
+.ezy__about17-shape-three {
+	z-index: -1;
+	top: 15%;
+	right: 10%;
+}
+.ezy__about17-shape-four {
+	z-index: -1;
+	bottom: 22%;
+	right: 15%;
+}
+
+.ezy__about17-cards {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+@media (min-width: 568px) {
+	.ezy__about17-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.ezy__about17-icon {
+	font-size: 50px;
+	color: var(--ezy-theme-color);
+}
+
+.ezy__about17-btn {
+	padding: 10px 40px !important;
+	color: var(--bs-body-color) !important;
+	border: 2px solid var(--bs-body-color) !important;
+	transition: 0.5s !important;
+}
+.ezy__about17-btn:hover {
+	color: #fff;
+	background-color: var(--ezy-theme-color);
+	border-color: var(--ezy-theme-color);
+}
+
+.ezy__about17-social li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 6px 8px;
+}
+
+.ezy__about17-social li a {
+	color: var(--bs-body-color);
+	width: 35px;
+	height: 35px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.ezy__about17-social li a:hover {
+	background-color: var(--ezy-theme-color);
+	border-color: var(--ezy-theme-color) !important;
+	color: #fff;
+}

@@ -1,0 +1,108 @@
+.ezy__footer11 {
+    --bs-body-color: rgb(50, 62, 80);
+    --bs-body-bg: #ffffff;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+    --ezy-card-bg: #f6f6f6;
+    --ezy-card-box-shadow: 0 7px 65px 0 rgb(0 0 0 / 12%);
+    --ezy-btn-color: #ffffff;
+    --ezy-btn-bg: #00bfa5;
+  
+    background-color: var(--bs-body-bg);
+    padding: 50px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__footer11 {
+      padding: 80px 0;
+    }
+  }
+  
+  /* Gray Block Style */
+  .gray .ezy__footer11,
+  .ezy__footer11.gray {
+    /* Bootstrap variables */
+    --bs-body-bg: rgb(246, 246, 246);
+  }
+  
+  /* Dark Gray Block Style */
+  .dark-gray .ezy__footer11,
+  .ezy__footer11.dark-gray {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(30, 39, 53);
+  
+    /* Easy Frontend variables */
+    --ezy-card-bg: #263547;
+    --ezy-card-box-shadow: 0 21px 65px 0 rgba(75, 75, 75, 0.25);
+  }
+  
+  /* Dark Block Style */
+  .dark .ezy__footer11,
+  .ezy__footer11.dark {
+    /* Bootstrap variables */
+    --bs-body-color: #ffffff;
+    --bs-body-bg: rgb(11, 23, 39);
+  
+    /* Easy Frontend variables */
+    --ezy-card-bg: #162231;
+    --ezy-card-box-shadow: 0 21px 65px 0 rgba(55, 55, 55, 0.25);
+  }
+  
+  .ezy__footer11-heading {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: var(--bs-body-color);
+  }
+  
+  .ezy__footer11-sub-heading {
+    font-size: 18px;
+    /* font-weight: 600; */
+    color: var(--bs-body-color);
+    line-height: 24px;
+    opacity: 0.7;
+  }
+  
+  .ezy__footer11-sub-heading,
+  .ezy__footer11-copyright {
+    font-size: 15px;
+    color: var(--bs-body-color);
+    line-height: 23px;
+    opacity: 0.7;
+  }
+  
+  .ezy__footer11-social-icon a {
+    color: var(--bs-body-color);
+    font-size: 24px;
+    margin: 0 22px 0 0;
+    opacity: 0.6;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .ezy__footer11-social-icon li:last-child a {
+    margin-right: 0;
+  }
+  
+  .ezy__footer11-social-icon a:hover {
+    color: rgba(0, 0, 0, 0.9) !important;
+    opacity: 1;
+  }
+  
+  .ezy__footer11-logo {
+    min-width: 80px;
+    width: 80px;
+    height: auto;
+    display: inline-block;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__footer11-logo {
+      min-width: 110px;
+      width: 110px;
+    }
+  }

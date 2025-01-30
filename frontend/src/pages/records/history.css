@@ -1,0 +1,113 @@
+/* General container */
+.history-container {
+  padding: 20px;
+  background: linear-gradient(180deg, #eaf4ff, #f9f9f9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title styling */
+.history-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #004085;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Table container for horizontal scrolling */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Table styling */
+.history-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  table-layout: fixed;
+}
+
+.history-table th,
+.history-table td {
+  font-size: 1rem;
+  padding: 14px 20px;
+  text-align: center; /* Centers the text for better alignment */
+  border-bottom: 1px solid #e9ecef;
+  font-size: 1rem;
+  word-wrap: break-word;
+  line-height: 1.5; /* Increases space between text */
+}
+
+/* Header row */
+.history-table th {
+  background: #0056b3;
+  color: white;
+  text-transform: capitalize; /* Changes from uppercase to capitalize */
+  font-size: 1rem;
+  font-weight: bold;
+  border-right: 1px solid #ffffff;
+  text-align: center;
+}
+
+.history-table th:last-child {
+  border-right: none;
+}
+
+/* Row striping */
+.history-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.history-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover effect */
+.history-table tr:hover {
+  background-color: #d6ebff;
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* First column (index) */
+.history-table td:first-child {
+  font-weight: bold;
+  color: #0056b3;
+  text-align: center;
+}
+
+/* Date column */
+.history-table td:last-child {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .history-table {
+    font-size: 0.85rem;
+  }
+
+  .history-title {
+    font-size: 2rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 12px 15px;
+  }
+}
