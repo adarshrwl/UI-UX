@@ -6,13 +6,13 @@ const userRoutes = require("./routes/userRoutes");
 const practiceRoutes = require("./routes/practiceRoutes");
 const audioQuestionRoutes = require("./routes/audioQuestionRoutes");
 const profileRoute = require("./routes/profileRoute");
-const nlpRoute = require("./routes/NLPRoutes"); // Correct route file import
+const nlpRoute = require("./routes/NLPRoutes"); 
 const historyRoutes = require("./routes/historyRoutes");
 const path = require("path");
 
 const app = express();
 
-// Connect to the database
+
 connectDB();
 
 // Middleware
