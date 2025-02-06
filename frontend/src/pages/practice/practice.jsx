@@ -354,9 +354,17 @@ const Practice = () => {
                     {renderProgressBar("Overall Score", overallScore)}
                     {renderProgressBar("Grammar", grammarPercentage)}
                     {renderProgressBar("Spelling", spellingPercentage)}
-                    {renderProgressBar("Lexical Diversity", lexicalDiversity)}
-                    {renderProgressBar("Coherence", coherenceScore)}
-                    {renderProgressBar("Task Achievement", taskAchievement)}
+
+                    {selectedTaskType === "Write about the Photo" && (
+                      <>
+                        {renderProgressBar(
+                          "Lexical Diversity",
+                          lexicalDiversity
+                        )}
+                        {renderProgressBar("Coherence", coherenceScore)}
+                        {renderProgressBar("Task Achievement", taskAchievement)}
+                      </>
+                    )}
                   </div>
                 </div>
               )}

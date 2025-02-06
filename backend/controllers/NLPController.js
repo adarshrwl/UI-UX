@@ -79,13 +79,14 @@ const analyzeText = async (req, res) => {
 
     // Send the response
     res.json({
-      grammarScore: grammarScore.toFixed(2),
-      lexicalDiversity: lexicalDiversity.toFixed(2),
-      coherenceScore: coherenceScore.toFixed(2),
-      taskAchievement: taskAchievement.toFixed(2),
-      spellingScore: spellingScore.toFixed(2),
+      grammarScore: Math.min(grammarScore, 100).toFixed(2),
+      lexicalDiversity: Math.min(lexicalDiversity, 100).toFixed(2),
+      coherenceScore: Math.min(coherenceScore, 100).toFixed(2),
+      taskAchievement: Math.min(taskAchievement, 100).toFixed(2),
+      spellingScore: Math.min(spellingScore, 100).toFixed(2),
       overallScore: Math.min(overallScore, 100).toFixed(2), // Ensure overallScore is capped
     });
+    
   } catch (error) {
     console.error("Error analyzing text:", error);
     res

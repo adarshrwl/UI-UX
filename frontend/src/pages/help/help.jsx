@@ -60,7 +60,7 @@ const ContactFormCard = () => (
     <Card.Body className="p-md-5">
       <h2 className="ezy__contact11-heading mb-3">Contact Us</h2>
       <p className="ezy__contact11-sub-heading mb-5">
-        We list your menu online, help you process orders.
+        Contact Us for any query or help regarding our services.
       </p>
 
       <ContactForm />
@@ -84,12 +84,10 @@ const ContactUs11 = () => {
             <Row className="py-4 justify-content-between">
               <Col lg={4} className="mb-5 mb-lg-0">
                 <h2 className="ezy__contact11-title mb-3 mt-0 text-white">
-                  Get in Touch
+                  Contact Us
                 </h2>
                 <p className="ezy__contact11-sub-heading mb-0 text-white">
-                  It’s easier to reach your savings goals when you have the
-                  right savings account. Take a look and find the right one for
-                  you!
+                  Share Your Thoughts To Us and help us to improve our services.
                 </p>
               </Col>
               <Col lg={5}>
